@@ -15,7 +15,7 @@ fi
 cd bullet3
 
 if [ -z ${ROS_DISTRO} ] || [ ${ROS_DISTRO} = "jazzy" ]; then
-    ./build_cmake_pybullet_3.12_double.sh Release
+    ./build_cmake_pybullet_3.10_double.sh Release
 else
     echo 'only ros jazzy is supported'
 fi
