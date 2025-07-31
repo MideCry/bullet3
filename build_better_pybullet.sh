@@ -14,10 +14,10 @@ fi
 
 cd bullet3
 
-if [ -z ${ROS_DISTRO} ] || [ ${ROS_DISTRO} = "jazzy" ]; then
+if [ -z ${ROS_DISTRO} ] || [ ${ROS_DISTRO} = "humble" ]; then
     ./build_cmake_pybullet_3.10_double.sh Release
 else
-    echo 'only ros jazzy is supported'
+    echo 'only ros humble is supported'
 fi
 
 echo 'export PYTHONPATH=${PYTHONPATH}':"${PWD}/build_cmake/better_python:${PWD}/examples/pybullet" >> ~/.bashrc
